@@ -13,6 +13,18 @@
 .site-list {
   list-style: none;
   display: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    position: absolute;
+    bottom: -22px;
+    right: 18px;
+    width: 436px;
+  }
 }
 
 .site-list__item {}
