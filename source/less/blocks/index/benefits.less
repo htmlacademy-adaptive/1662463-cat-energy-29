@@ -1,6 +1,15 @@
 .benefits {
   margin: 0;
   padding: 0;
+  min-height: 380px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 740px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 450px;
+  }
 }
 
 .benefits__heading {
