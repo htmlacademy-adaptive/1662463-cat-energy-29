@@ -1,4 +1,14 @@
-.contacts {}
+.contacts {
+  min-height: 480px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 600px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+  }
+}
 
 .contacts__wrapper {}
 

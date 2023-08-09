@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
   background-color: @basic-grey;
+
+  min-height: 660px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 890px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 700px;
+  }
 }
 
 .example__heading {

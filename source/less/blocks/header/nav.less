@@ -1,4 +1,6 @@
-.nav {}
+.nav {
+  position: relative;
+}
 
 .nav__toggle {
   background: url("../img/header/toggle.svg") no-repeat;
@@ -6,13 +8,31 @@
   height: 24px;
   border: none;
   position: absolute;
+  display: block;
   top: -45px;
   right: 4px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
 }
 
 .site-list {
   list-style: none;
   display: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    position: absolute;
+    bottom: 1px;
+    right: 17px;
+    width: 436px;
+  }
 }
 
 .site-list__item {}
@@ -23,4 +43,9 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
