@@ -1,20 +1,19 @@
 .programs {
   margin-top: 20px;
   padding: 0;
-  min-height: 540px;
 
   @media (min-width: @tablet-width) {
-    min-height: 750px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 390px;
+    margin: 0;
   }
 }
 
 .programs__list {
   margin: 0 20px;
-  padding:0;
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 280px;
@@ -38,6 +37,7 @@
   background-color: @basic-grey;
   padding-right: 30px;
   padding-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding-right: 28px;
@@ -49,6 +49,30 @@
   }
 }
 
+.programs__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: @basic-green;
+  top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 67px;
+    right: 418px;
+  }
+}
+
 .programs__heading {
   color: @basic-black;
   font-size: 24px;
@@ -57,34 +81,62 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 30px 0 29px;
+  padding: 0;
+  margin: 30px 0 29px;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 0 24px;
+    margin: 77px 0 24px;
     text-align: left;
     font-size: 36px;
     line-height: 37px;
+
   }
 
   @media (min-width: @desktop-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 73px;
     text-align: center;
+    margin: 99px 0 71px;
+  }
+}
+
+.programs__heading--slim {
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 35px;
+  }
+}
+
+.programs__heading--pro {
+  margin-left: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
   }
 }
 
 .programs__text {
   font-family: "Lato", sans-serif;
-  padding-bottom: 38px;
+  padding-bottom: 22px;
   margin: 0;
+  min-width: 240px;
+  border-bottom: 2px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 340px;
     padding-bottom: 47px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,9 +151,10 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 4px 0;
+  padding: 19px 0;
+  margin-bottom: 2px;
   display: block;
-  margin-bottom: 18px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

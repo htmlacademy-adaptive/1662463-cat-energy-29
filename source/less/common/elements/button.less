@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  color: @basic-white;
+  background-color: @basic-green;
+  border: none;
+  text-transform: uppercase;
+}
+
+.button--program {
+  padding: 11px 8px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 11px;
+    width: 244px;
+    height: 54px;
+    text-align: center;
+    position: absolute;
+    top: 305px;
+    left: 120px;
+  }
+}

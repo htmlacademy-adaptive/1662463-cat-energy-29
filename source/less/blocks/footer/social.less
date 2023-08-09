@@ -1,0 +1,42 @@
+.social {
+  margin: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    min-height: 150px;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 170px;
+  }
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 30px;
+    min-width: 132px;
+
+  }
+}
+
+.socials__item {
+  display: flex;
+  align-items: flex-end;
+}
+
+.social__link {}
+
+.social__svg {}

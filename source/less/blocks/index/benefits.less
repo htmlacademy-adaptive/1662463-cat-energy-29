@@ -56,7 +56,7 @@
   font-family: "Lato", sans-serif;
   width: 200px;
   position: relative;
-  right: -39px;
+  right: -80px;
   top: 2px;
 
   @media (min-width: @tablet-width) {
@@ -69,16 +69,70 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
     right: 1px;
     padding-top: 149px;
     padding-bottom: 58px;
   }
 }
 
-.benefits__item--nutrients {}
+.benefits__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: @basic-green no-repeat center;
+  top: -1px;
+  right: 220px;
 
-.benefits__item--cooking {}
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 37px;
+    right: 170px;
+  }
 
-.benefits__item--eating {}
+  @media (min-width: @desktop-width) {}
+}
 
-.benefits__item--results {}
+.benefits__item--nutrients {
+  @media (min-width: @tablet-width) {
+    background: url("../img/index/benefits/number-one.png") no-repeat 127px 38px;
+  }
+}
+
+.benefits__item--nutrients::before {
+  background-image: url("../img/index/benefits/icon-nutrients.svg");
+}
+
+.benefits__item--cooking {
+  @media (min-width: @tablet-width) {
+    background: url("../img/index/benefits/number-two.png") no-repeat 122px 36px;
+  }
+}
+
+.benefits__item--cooking::before {
+  background-image: url("../img/index/benefits/icon-cooking.svg");
+}
+
+.benefits__item--eating {
+  @media (min-width: @tablet-width) {
+    background: url("../img/index/benefits/number-three.png") no-repeat 124px 37px;
+  }
+}
+
+.benefits__item--eating::before {
+  background-image: url("../img/index/benefits/icon-eating.svg");
+}
+
+.benefits__item--results {
+  @media (min-width: @tablet-width) {
+    background: url("../img/index/benefits/number-four.png") no-repeat 123px 38px;;
+  }
+}
+
+.benefits__item--results::before {
+  background-image: url("../img/index/benefits/icon-results.svg");
+}
