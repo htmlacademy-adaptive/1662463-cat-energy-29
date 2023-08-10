@@ -1,10 +1,12 @@
 .button {
+  font-family: "Oswald", sans-serif;
   display: block;
   box-sizing: border-box;
   color: @basic-white;
   background-color: @basic-green;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--program {
@@ -23,5 +25,40 @@
     position: absolute;
     top: 305px;
     left: 120px;
+  }
+}
+
+.products__card-button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+    margin-top: 20px;
+  }
+}
+
+.products__card-button--show-more {
+  width: 30px;
+  height: 30px;
+  background: @basic-white url("../img/catalog/button-show-more.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+  }
+}
+
+.products__card-button--show-all {
+  padding: 10px;
+  background: @basic-grey;
+  color: @dark-grey;
+  min-width: 280px;
+  margin-top: 21px;
+
+  @media (min-width: @tablet-width){
+    min-width: 250px;
   }
 }
