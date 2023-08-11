@@ -10,7 +10,7 @@
 }
 
 .button--program {
-  padding: 11px 8px;
+  padding: 11px;
   width: 280px;
   margin: 0 auto;
   position: relative;
@@ -18,7 +18,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 11px;
+    padding: 16px;
     width: 244px;
     height: 54px;
     text-align: center;
@@ -26,12 +26,18 @@
     top: 305px;
     left: 120px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 348px;
+    left: 189px;
+  }
 }
 
 .products__card-button {
+  grid-column: 1 / -1;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
+  padding: 10px;
 
   @media (min-width: @tablet-width) {
     min-width: 250px;
@@ -63,7 +69,29 @@
   min-width: 280px;
   margin-top: 21px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     min-width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+  }
+}
+
+.second-products__button {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: auto;
+    width: 244px;
   }
 }

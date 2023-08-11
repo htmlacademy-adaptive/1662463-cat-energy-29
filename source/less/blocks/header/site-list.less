@@ -7,15 +7,19 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 33px;
     position: absolute;
     bottom: 1px;
     right: 20px;
-    width: 436px;
+    min-width: 436px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    right: 120px;
+    right: 112px;
+    bottom: 5px;
+    gap: 34px;
 
   }
 }
