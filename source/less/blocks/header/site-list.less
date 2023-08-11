@@ -1,13 +1,13 @@
 .site-list {
   list-style: none;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 33px;
     position: absolute;
     bottom: 1px;
@@ -20,11 +20,20 @@
     right: 112px;
     bottom: 5px;
     gap: 34px;
-
   }
 }
 
-.site-list__item {}
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {}
+}
 
 .site-list__link {
   font-size: 20px;
@@ -32,6 +41,8 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 22px 0 24px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
