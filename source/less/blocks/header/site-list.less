@@ -10,8 +10,8 @@
     flex-direction: row;
     gap: 33px;
     position: absolute;
-    bottom: 1px;
-    right: 20px;
+    bottom: 0;
+    right: 17px;
     min-width: 436px;
     justify-content: space-between;
   }
@@ -47,10 +47,17 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 0 0 10px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: normal;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-green;
   }
 }
