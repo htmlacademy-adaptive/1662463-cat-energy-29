@@ -1,14 +1,17 @@
 .benefits {
   margin: 20px auto 0;
-  padding: 0;
-  width: 280px;
+  padding: 0 20px 0px 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 45px 29px 0 31px;
+    margin: 45px auto 47px;
+    width: 708px;
+    padding: 0 0 0 18px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 56px 107px 69px 110px;
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
   }
 }
 
@@ -18,13 +21,15 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0;
-  width: 260px;
+  min-width: 260px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    width: 385px;
+    min-width: 708px;
+    box-sizing: border-box;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 71px;
   }
@@ -33,21 +38,21 @@
 .benefits__list {
   list-style: none;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 42px;
   padding-left: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 26px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 32px;
-    grid-template-columns: repeat(2, 249px);
-    column-gap: 136px;
+    padding-top: 71px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 61px;
     row-gap: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 75px;
 
   }
@@ -55,28 +60,18 @@
 
 .benefits__item {
   font-family: "Lato", sans-serif;
-  width: 200px;
   position: relative;
-  right: -80px;
-  top: 2px;
+  padding: 0 2px 0 80px;
+
 
   @media (min-width: @tablet-width) {
-    width: 250px;
     font-size: 16px;
     line-height: 24px;
-    right: 1px;
-    padding-top: 149px;
-    padding-bottom: 58px;
+    padding: 112px 55px 97px 0px;
   }
 
-  @media (min-width: @desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 250px;
-    right: 1px;
-    padding-top: 149px;
-    padding-bottom: 58px;
-  }
+  @media (min-width: @desktop-width) {}
+
 }
 
 .benefits__item::before {
@@ -85,14 +80,12 @@
   width: 60px;
   height: 60px;
   background: @basic-green no-repeat center;
-  top: -1px;
-  right: 220px;
+  top: 0;
+  left: 0;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: 37px;
-    right: 170px;
   }
 
   @media (min-width: @desktop-width) {}
@@ -100,7 +93,7 @@
 
 .benefits__item--nutrients {
   @media (min-width: @tablet-width) {
-    background: url("../img/index/benefits/number-one.png") no-repeat 127px 38px;
+    background: url("../img/index/benefits/number-one.png") no-repeat center top;
   }
 }
 
@@ -110,7 +103,7 @@
 
 .benefits__item--cooking {
   @media (min-width: @tablet-width) {
-    background: url("../img/index/benefits/number-two.png") no-repeat 122px 36px;
+    background: url("../img/index/benefits/number-two.png") no-repeat 120px -2px;
   }
 }
 
@@ -130,7 +123,8 @@
 
 .benefits__item--results {
   @media (min-width: @tablet-width) {
-    background: url("../img/index/benefits/number-four.png") no-repeat 123px 38px;;
+    background: url("../img/index/benefits/number-four.png") no-repeat 123px 38px;
+    ;
   }
 }
 

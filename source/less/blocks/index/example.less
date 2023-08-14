@@ -1,20 +1,25 @@
 .example {
-  margin-top: 55px;
+  margin: 55px auto 0;
   padding: 0 20px;
   background-color: @basic-grey;
-  min-height: 660px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 31px;
-    min-height: 890px;
+    min-height: 920px;
+    width: 708px;
+    background-color: unset;
 
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 69px;
+    margin: 69px auto;
     padding: 0 110px;
-    min-height: 700px;
+    min-height: unset;
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
   }
 }
 
@@ -29,11 +34,11 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 92px;
+    padding-top: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 69px;
+    padding-top: 0;
   }
 }
 
@@ -43,7 +48,6 @@
   line-height: 18px;
   padding-top: 40px;
   margin: 0;
-  width: 280px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -53,7 +57,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 450px;
+    padding-top: 146px;
+    width: 432px;
   }
 }
 
@@ -71,7 +76,9 @@
     gap: 42px;
   }
 
-  @media (min-width: @desktop-width) {}
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
+  }
 }
 
 .example__container {
@@ -163,4 +170,8 @@
 
 
 
-.example__slider {}
+.example__block-slider {
+  @media (min-width: @desktop-width) {
+    width: 560px;
+  }
+}

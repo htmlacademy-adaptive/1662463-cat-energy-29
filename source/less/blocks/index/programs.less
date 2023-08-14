@@ -1,33 +1,34 @@
 .programs {
-  margin-top: 20px;
-  padding: 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 auto;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    width: 1220px;
+    padding-top: 81px;
   }
 }
 
 .programs__list {
-  margin: 0 20px;
+  margin: 20px;
   padding: 0;
   list-style: none;
   display: grid;
   gap: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 31px;
-    margin-right: 29px;
-    grid-template-columns: 708px;
+    margin-left: 9px;
+    margin-right: -9px;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
-    grid-template-columns: repeat(2, 570px);
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
 }
@@ -44,7 +45,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 67px;
   }
 }
 
@@ -106,9 +106,6 @@
     margin-left: 0;
   }
 
-  @media (min-width: @desktop-width) {
-    margin-left: 35px;
-  }
 }
 
 .programs__heading--pro {
@@ -119,7 +116,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 77px;
+    margin-left: 39px;
   }
 }
 
@@ -140,6 +137,7 @@
 
   @media (min-width: @desktop-width) {
     width: 460px;
+    padding-top: 3px;
     padding-bottom: 27px;
   }
 }
