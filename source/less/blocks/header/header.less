@@ -1,16 +1,19 @@
 .header {
   position: relative;
-  background: url("../img/header/logo-text.svg") no-repeat 109px 22px;
+  background: url("../img/header/logo-text.svg") no-repeat center 22px;
   padding-top: 65px;
+  z-index: 10;
 
   @media (min-width: @tablet-width) {
-    padding-top: 75px;
-    background: url("../img/header/logo-text.svg") no-repeat 102px 41px;
+    background: none;
+    padding-left: 258px;
+    padding-top: 39px;
+    padding-right: 34px;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/header/logo-text-tablet.svg") no-repeat 194px 75px;
-    padding-top: 109px;
+    padding: 0 0 0 0;
+
   }
 }
 
@@ -20,12 +23,23 @@
   left: 20px;
 
   @media (min-width: @tablet-width) {
-    top: 30px;
-    left: 43px;
+    top: 23px;
+    left: 59px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 65px;
-    left: 130px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.header__container {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 72px;
+    padding-left: 650px;
   }
 }
