@@ -152,13 +152,13 @@
   text-transform: uppercase;
   width: 200px;
   margin: 0;
-  padding: 20px 40px 0;
+  padding: 20px 40px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     width: 175px;
-    padding: 65px 0 0;
+    padding: 65px 0;
     text-align: right;
   }
 
@@ -171,7 +171,10 @@
 
 
 .example__block-slider {
+  min-height: 256px;
+
   @media (min-width: @desktop-width) {
     width: 560px;
+    min-height: unset;
   }
 }

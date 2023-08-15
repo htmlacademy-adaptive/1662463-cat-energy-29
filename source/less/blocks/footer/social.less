@@ -1,5 +1,6 @@
 .social {
-  margin: 36px auto;
+  margin: 0 auto;
+  padding: 32px 20px 40px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -7,7 +8,8 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    margin: 0;
+    padding: 53px 30px;
     width: 708px;
     flex-direction: row;
     justify-content: space-between;
@@ -15,6 +17,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1220px;
 
   }
@@ -30,14 +33,20 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+  width: 100%;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-}
 
   @media (min-width: @tablet-width) {
-
-
+    border-top: none;
+    border-bottom: none;
+    min-height: unset;
+    width: unset;
+    padding-left: 33px;
   }
+}
+
+
 
 .social__item {
   display: flex;

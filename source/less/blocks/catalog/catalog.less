@@ -1,27 +1,31 @@
 .catalog {
-  margin: 0 20px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    padding: 0 110px;
   }
 }
 
 .catalog__heading {
   margin: 0;
-  padding: 27px 0 41px;
+  padding: 27px 20px 41px;
   color: @basic-black;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 75px 0 128px;
+    padding: 70px 0 121px;
     font-size: 60px;
     line-height: 60px;
+    border-top: none;
+
   }
 
   @media (min-width: @desktop-width) {
