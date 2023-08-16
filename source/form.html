@@ -61,11 +61,13 @@
       <fieldset class="form__group group-program">
         <ul class="form__list group-program__list">
           <li class="form__item group-program__item radio">
-            <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="program-type" value="weight-loss" checked>
+            <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="program-type"
+              value="weight-loss" checked>
             <label class="radio__label" for="weight-loss">Похудение</label>
           </li>
           <li class="form__item group-program__item radio">
-            <input class="radio__input visually-hidden" type="radio" id="weight-gain" name="program-type" value="weight-gain">
+            <input class="radio__input visually-hidden" type="radio" id="weight-gain" name="program-type"
+              value="weight-gain">
             <label class="radio__label" for="weight-gain">Набор массы</label>
           </li>
           <li class="form__item group-program__item radio">
@@ -92,31 +94,37 @@
       </fieldset>
 
 
-      <fieldset class="form__group">
-        <legend class="text-input__title">Комментарии</legend>
-        <label class="text-input" for="message"></label>
-        <textarea class="text-input__message" name="comment" id="message" cols="30" rows="10"
+      <fieldset class="form__group group-comments">
+        <legend class="special-title group-comments__title">
+          <span class="special-title__text group-comments__text">Комментарий</span>
+        </legend>
+        <label class="text-input__label group-comments__label" for="message"></label>
+        <textarea class="text-input__input textarea" name="comment" id="message" maxlength="250"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__group">
-        <legend class="text-input__title">Дополнительно</legend>
-        <label class="control">
-          <input class="control-input" type="checkbox" name="sweetener" checked>
-          Сахарозаменитель
-        </label>
-        <label class="control">
-          <input class="control-input" type="checkbox" name="water">
-          Питьевая вода
-        </label>
-        <label class="control">
-          <input class="control-input" type="checkbox" name="milk">
-          Молоко
-        </label>
-        <label class="control">
-          <input class="control-input" type="checkbox" name="vitamins">
-          Витамины
-        </label>
+      <fieldset class="form__group group-others">
+        <legend class="special-title group-others__title">
+          <span class="special-title__text group-comments__text">Дополнительно</span>
+        </legend>
+        <ul class="form__list group-others__list">
+          <li class="form__item group-others__item control">
+            <input class="control__input" type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class="control__label" for="sweetener">Сахарозаменитель</label>
+          </li>
+          <li class="form__item group-others__item control">
+            <input class="control__input" type="checkbox" name="water" id="water">
+            <label class="control__label" for="water">Питьевая вода</label>
+          </li>
+          <li class="form__item group-others__item control">
+            <input class="control__input" type="checkbox" name="milk" id="milk">
+            <label class="control__label" for="milk">Молоко</label>
+          </li>
+          <li class="form__item group-others__item control">
+            <input class="control__input" type="checkbox" name="vitamins" id="vitamins">
+            <label class="control__label" for="vitamins">Витамины</label>
+          </li>
+        </ul>
         <button class="text-input__button" type="submit">Отправить заявку</button>
         <p class="text-input__important">* — Обязательные поля</p>
       </fieldset>

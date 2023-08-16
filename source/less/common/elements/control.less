@@ -1,4 +1,4 @@
-.radio__label {
+.control__label {
   color: @dark-grey;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -6,39 +6,39 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  min-height: 22px;
+  min-height: 27px;
   display: inline-block;
-  padding: 8px 0 0 45px;
+  padding: 3px 0 0 22px;
   position: relative;
 }
 
-.radio__label::before {
+.control__label::before {
   content: "";
   width: 30px;
   height: 30px;
   position: absolute;
   top: 0;
-  left: -1px;
+  left: -24px;
   border: 1px solid #cdcdcd;
-  border-radius: 50%;
+  background: @basic-white;
 }
 
-.radio__label::after {
+.control__label::after {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  border-radius: 50%;
-  background-color: @basic-green;
+  background: url("/source/img/form/control-input-tick.svg") no-repeat center;
   top: 9px;
   left: 8px;
   display: none;
+  z-index: 1;
 }
 
-.radio__input {
+.control__input {
   cursor: pointer;
 }
 
-.radio__input:checked + .radio__label::after {
+.control__input:checked + .control__label::after {
   display: block;
 }
