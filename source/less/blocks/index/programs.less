@@ -42,8 +42,7 @@
     padding: 0 28px 0 52px;
   }
 
-  @media (min-width: @desktop-width) {
-  }
+  @media (min-width: @desktop-width) {}
 }
 
 .programs__item::before {
@@ -70,6 +69,62 @@
   }
 }
 
+.programs__item--slim::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 50px;
+  background: url("../img/index/programs/cat-slim-mobile.svg") no-repeat center center;
+  position: absolute;
+  z-index: 2;
+  top: 21px;
+  left: 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+    background: url("../img/index/programs/cat-slim-tablet.svg") no-repeat center center;
+    top: 79px;
+    left: 67%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
+    background: url("../img/index/programs/cat-slim-desktop.svg") no-repeat center center;
+    top: 41px;
+    left: 67px;
+  }
+}
+
+.programs__item--pro::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 28px;
+  background: url("../img/index/programs/cat-pro-mobile.svg") no-repeat center center;
+  position: absolute;
+  z-index: 2;
+  top: 36px;
+  left: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    background: url("../img/index/programs/cat-pro-tablet.svg") no-repeat center center;
+    top: 135px;
+    left: 58%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+    background: url("../img/index/programs/cat-pro-desktop.svg") no-repeat center center;
+    top: 68px;
+    left: 32px;
+  }
+}
+
 .programs__heading {
   color: @basic-black;
   font-size: 24px;
@@ -78,11 +133,12 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0;
-  margin: 30px 0 29px;
+  padding: 30px 0 0;
+  margin: 0 0 29px;
 
   @media (min-width: @tablet-width) {
-    margin: 75px 0 24px;
+    padding: 75px 0 24px;
+    margin: 0;
     text-align: left;
     font-size: 36px;
     line-height: 37px;
@@ -93,15 +149,15 @@
     font-size: 36px;
     line-height: 36px;
     text-align: center;
-    margin: 77px 0 71px;
+    padding: 77px 0 71px;
   }
 }
 
 .programs__heading--slim {
-  margin-left: 8px;
+  padding-left: 8px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    padding-left: 0;
   }
 
 }
