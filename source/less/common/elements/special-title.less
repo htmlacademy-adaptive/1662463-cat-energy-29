@@ -1,0 +1,30 @@
+.special-title {
+  margin: 0;
+  padding: 0;
+  color: @basic-black;
+  font-size: 24px;
+  line-height: 26px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.special-title::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 1;
+  height: 1px;
+  border-top: 2px solid @basic-green;
+}
+
+.special-title__text {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+  max-width: 186px;
+}

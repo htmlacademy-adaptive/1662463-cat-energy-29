@@ -1,51 +1,127 @@
 .programs {
-  margin-top: 20px;
-  padding: 0;
-  min-height: 540px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-height: 750px;
+    margin: 0 auto;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 390px;
+    width: 1220px;
+    padding-top: 81px;
   }
 }
 
 .programs__list {
-  margin: 0 20px;
-  padding:0;
+  margin: 20px;
+  padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 280px;
   gap: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 31px;
-    margin-right: 29px;
-    grid-template-columns: 708px;
+    margin-left: 9px;
+    margin-right: -9px;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
-    grid-template-columns: repeat(2, 570px);
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
 }
 
 .programs__item {
   background-color: @basic-grey;
-  padding-right: 30px;
-  padding-left: 20px;
+  padding: 0 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-right: 28px;
-    padding-left: 52px;
+    padding: 0 28px 0 52px;
+  }
+
+  @media (min-width: @desktop-width) {}
+}
+
+.programs__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: @basic-green;
+  top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    right: 63px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 67px;
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    right: 418px;
+  }
+}
+
+.programs__item--slim::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 50px;
+  background: url("../img/index/programs/cat-slim-mobile.svg") no-repeat center center;
+  position: absolute;
+  z-index: 2;
+  top: 21px;
+  left: 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+    background: url("../img/index/programs/cat-slim-tablet.svg") no-repeat center center;
+    top: 79px;
+    left: 67%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
+    background: url("../img/index/programs/cat-slim-desktop.svg") no-repeat center center;
+    top: 41px;
+    left: 67px;
+  }
+}
+
+.programs__item--pro::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 28px;
+  background: url("../img/index/programs/cat-pro-mobile.svg") no-repeat center center;
+  position: absolute;
+  z-index: 2;
+  top: 36px;
+  left: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    background: url("../img/index/programs/cat-pro-tablet.svg") no-repeat center center;
+    top: 135px;
+    left: 58%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+    background: url("../img/index/programs/cat-pro-desktop.svg") no-repeat center center;
+    top: 68px;
+    left: 32px;
   }
 }
 
@@ -57,38 +133,65 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 30px 0 29px;
+  padding: 30px 0 0;
+  margin: 0 0 29px;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 0 24px;
+    padding: 75px 0 24px;
+    margin: 0;
     text-align: left;
     font-size: 36px;
     line-height: 37px;
+
   }
 
   @media (min-width: @desktop-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 73px;
     text-align: center;
+    padding: 77px 0 71px;
+  }
+}
+
+.programs__heading--slim {
+  padding-left: 8px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+
+}
+
+.programs__heading--pro {
+  margin-left: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 39px;
   }
 }
 
 .programs__text {
   font-family: "Lato", sans-serif;
-  padding-bottom: 38px;
+  padding-bottom: 22px;
   margin: 0;
+  min-width: 240px;
+  border-bottom: 2px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 340px;
     padding-bottom: 47px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 460px;
+    padding-top: 3px;
     padding-bottom: 27px;
   }
 }
@@ -99,9 +202,10 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 4px 0;
+  padding: 19px 0;
+  margin-bottom: 2px;
   display: block;
-  margin-bottom: 18px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
