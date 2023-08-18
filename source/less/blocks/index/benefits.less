@@ -32,7 +32,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 71px;
+    margin-top: 69px;
   }
 }
 
@@ -60,19 +60,16 @@
 }
 
 .benefits__item {
-  font-family: "Lato", sans-serif;
   position: relative;
   padding: 0 2px 0 80px;
 
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 111px 55px 72px 0;
+    padding: 79px 55px 74px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 111px 0 97px 0;
+    padding: 79px 0 72px 0;
   }
 
 }
@@ -92,11 +89,19 @@
     counter-increment: section;
     height: 280px;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 24px;
+  }
 }
 
 .benefits__item--cooking::after {
   @media (min-width: @tablet-width) {
     right: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 3px;
   }
 }
 
@@ -104,11 +109,19 @@
   @media (min-width: @tablet-width) {
     right: 75px;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
 }
 
 .benefits__item--results::after {
   @media (min-width: @tablet-width) {
     right: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -4px;
   }
 }
 
@@ -143,4 +156,19 @@
 
 .benefits__item--results::before {
   background-image: url("../img/index/benefits/icon-results.svg");
+}
+
+.benefits__text {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+@media (min-width: @desktop-width) {
+  padding-top: 33px;
+}
 }
