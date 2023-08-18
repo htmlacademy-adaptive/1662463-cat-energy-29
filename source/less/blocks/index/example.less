@@ -1,15 +1,13 @@
 .example {
   margin: 55px auto 0;
   padding: 0 20px 40px;
-  background-color: @basic-grey;
+  background: @basic-grey;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     padding: 0 31px 0;
-    width: 708px;
     min-height: 1036px;
-    background-color: unset;
-
+    background: linear-gradient(to top, @basic-grey, @basic-grey 457px, transparent 457px, transparent 100%);
   }
 
   @media (min-width: @desktop-width) {
@@ -20,6 +18,7 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
+    background: linear-gradient(to bottom, transparent, transparent 135px, @basic-grey 135px, @basic-grey 100%);
   }
 }
 
