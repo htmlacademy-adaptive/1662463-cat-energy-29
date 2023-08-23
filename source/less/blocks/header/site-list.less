@@ -50,10 +50,33 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: @basic-white;
     font-size: 20px;
     line-height: normal;
   }
+}
+
+.site-list__link:hover {
+  outline: none;
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  color: @basic-black;
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
+}
+
+.site-list__link--special {
+  @media (min-width: @desktop-width) {
+    color: @basic-black;
+  }
+}
+
+
+.site-list__link--current-special {
+  border-bottom: 2px solid @basic-green;
 }
 
 .site-list__link--current {
@@ -65,3 +88,4 @@
     border-bottom: 2px solid @basic-white;
   }
 }
+

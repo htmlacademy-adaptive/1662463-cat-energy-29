@@ -126,3 +126,21 @@
 
   @media (min-width: @tablet-width) {}
 }
+
+.second-products__button {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: auto;
+    width: 244px;
+  }
+}

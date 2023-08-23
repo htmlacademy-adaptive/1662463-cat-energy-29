@@ -32,6 +32,27 @@
   }
 }
 
+.header__logo:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
+.header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .header__container {
   @media (min-width: @desktop-width) {
     width: 1220px;

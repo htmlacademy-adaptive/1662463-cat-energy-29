@@ -6,19 +6,17 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  min-height: 27px;
   display: inline-block;
-  padding: 3px 0 0 22px;
-  position: relative;
+
+
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: normal;
-    padding: 4px 0 0 36px;
   }
 }
 
-.control__label::before {
+/*.control__label::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -56,4 +54,22 @@
 
 .control__input:checked+.control__label::after {
   display: block;
+}
+*/
+
+.control__input[type="checkbox"] {
+  margin: 0;
+  appearance: none;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width:@tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control-input[type="checkbox"]:checked {
+  background: url("../img/form/control-input-tick.svg") no-repeat center center;
 }

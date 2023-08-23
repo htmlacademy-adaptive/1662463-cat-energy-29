@@ -2,13 +2,13 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 708px;
+    margin: 0;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding-top: 81px;
+    padding: 81px 0 0 0;
   }
 }
 
@@ -223,4 +223,12 @@
     width: 167px;
     padding: 1px;
   }
+}
+
+.programs__link:hover {
+  outline: none;
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }
