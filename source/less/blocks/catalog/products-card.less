@@ -1,4 +1,3 @@
-
 .products__card {
   margin: 0;
   display: grid;
@@ -13,29 +12,6 @@
   }
 }
 
-.products__card-wrapper {
-  width: 140px;
-  height: 107px;
-}
-
-.products__card::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: @basic-grey;
-    width: 100%;
-    height: 429px;
-    z-index: -1;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 245px;
-    height: 430px;
-  }
-}
-
 .products__card-link {
   @media (min-width: @tablet-width) {
     min-height: 220px;
@@ -43,7 +19,17 @@
 }
 
 
-.products__card-img {}
+.products__card-img {
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    height: 210px;
+  }
+}
 
 .products__card-container {
   display: grid;
