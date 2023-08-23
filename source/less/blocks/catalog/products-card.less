@@ -1,0 +1,236 @@
+
+.products__card {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 17px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
+    border-top: none;
+  }
+}
+
+.products__card-wrapper {
+  width: 140px;
+  height: 107px;
+}
+
+.products__card::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: @basic-grey;
+    width: 100%;
+    height: 429px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 430px;
+  }
+}
+
+.products__card-link {
+  @media (min-width: @tablet-width) {
+    min-height: 220px;
+  }
+}
+
+
+.products__card-img {}
+
+.products__card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    row-gap: 21px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 31px;
+  }
+}
+
+.products__card-title {
+  color: #222222;
+  margin: 0;
+  width: 80px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+    width: 140px;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.products__card-table {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 46px 54px;
+    column-gap: 150px;
+    row-gap: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 46px 54px;
+    column-gap: 69px;
+    row-gap: 12px;
+  }
+}
+
+.products__card-description,
+.products__card-value {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}
+
+.products__card-value {
+  text-align: right;
+  margin: 0;
+
+}
+
+.products__card-button {
+  grid-column: 1 / -1;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+    margin: 20px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+  }
+
+}
+
+.products__card--show-more {
+  margin: 0;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 37px 40px;
+    justify-content: space-between;
+    border-bottom: 0;;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 38px 40px;
+  }
+}
+
+.products__card--show-more::before {
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
+}
+
+.products__card-button--show-more {
+  width: 30px;
+  height: 30px;
+  background: @basic-white url("../img/catalog/button-show-more.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+  }
+}
+
+.products__card-title--show-more {
+  min-width: 204px;
+  margin: 0;
+  padding: 7px 0 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 140px;
+    padding: 50px 0 23px;
+  }
+}
+
+
+
+.products__card-text {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 82px;
+    text-align: center;
+    width: 172px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.products__card-button--show-all {
+  padding: 10px;
+  background: @basic-grey;
+  color: @dark-grey;
+  min-width: 280px;
+  margin-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+  }
+}
+
+.products__card-button--show-all:hover {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.products__card-button--show-all:active {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}
