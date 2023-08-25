@@ -2,7 +2,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 17px;
+  row-gap: 13px;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
@@ -17,10 +17,12 @@
 .products__card-img {
   width: 140px;
   height: 107px;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 210px;
+    padding-top: unset;
     padding-left: 25px;
   }
 
@@ -52,7 +54,9 @@
 .products__card-title {
   color: #222222;
   margin: 0;
+  padding-top: 20px;
   width: 80px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -60,15 +64,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+    width: 140px;
     font-size: 20px;
     line-height: 24px;
-    width: 140px;
     text-align: center;
     align-self: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: unset;
+    padding-top: 8px;
   }
 }
 
@@ -179,7 +183,7 @@
 .products__card-title--show-more {
   min-width: 204px;
   margin: 0;
-  padding: 7px 0 0;
+  padding: 12px 0 0;
 
   @media (min-width: @tablet-width) {
     min-width: 140px;
@@ -217,11 +221,12 @@
 
   @media (min-width: @tablet-width) {
     min-width: 250px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
-    margin-top: 65px;
+    margin-top: 13px;
   }
 }
 
