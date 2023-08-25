@@ -210,6 +210,7 @@
   margin-bottom: 2px;
   display: block;
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -223,6 +224,28 @@
     margin-bottom: 59px;
     width: 167px;
     padding: 1px;
+  }
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  background: url("../img/index/programs/icon-arrow.svg");
+  top: 20px;
+  right: 108px;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    top: 14px;
+    right: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 8px;
+    right: 3px;
   }
 }
 

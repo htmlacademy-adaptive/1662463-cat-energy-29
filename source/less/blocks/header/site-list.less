@@ -51,7 +51,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: @basic-white;
     font-size: 20px;
     line-height: normal;
   }
@@ -72,22 +71,16 @@
 
 .site-list__link--special {
   @media (min-width: @desktop-width) {
-    color: @basic-black;
+    color: @basic-white;
   }
-}
-
-
-.site-list__link--current-special {
-  border-bottom: 2px solid @basic-green;
 }
 
 .site-list__link--current {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @basic-green;
   }
-
-  @media (min-width: @desktop-width) {
-    border-bottom: 2px solid @basic-white;
-  }
 }
 
+.site-list__link--current-special {
+  border-bottom: 2px solid @basic-white;
+}

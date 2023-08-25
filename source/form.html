@@ -13,10 +13,8 @@
     <div class="header__container">
       <a class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.svg" type="image/svg" width="202"
-            height="59">
-          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" type="image/svg" width="174"
-            height="50">
+          <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" width="174" height="50">
           <img class="header__logo-image" src="img/header/logo-mobile.svg" srcset="img/header/logo-mobile@2x.svg"
             width="33" height="38" alt="Логотип интернет-магазина Кэт энерджи">
         </picture>
@@ -27,13 +25,13 @@
         </button>
         <ul class="nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--special " href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--special" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--special site-list__link--current-special" href="#">Подбор
+            <a class="site-list__link site-list__link--current" href="#">Подбор
               программы</a>
           </li>
         </ul>
@@ -88,16 +86,16 @@
         <legend class="special-title group-info__title">
           <span class="special-title__text group-info__text">Контактные данные (владельца кота)</span>
         </legend>
-          <ul class="form__list group-info__list">
-            <li class="form__item group-info__item text-input">
-              <label class="text-input__label" for="email-field">E-mail:*</label>
-              <input class="text-input__input" type="email" name="email" id="email-field" value="кuklachev@gmail.com">
-            </li>
-            <li class="form__item group-info__item text-input">
-              <label class="text-input__label" for="phone-field">Телефон:*</label>
-              <input class="text-input__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90">
-            </li>
-          </ul>
+        <ul class="form__list group-info__list">
+          <li class="form__item group-info__item text-input">
+            <label class="text-input__label" for="email-field">E-mail:*</label>
+            <input class="text-input__input" type="email" name="email" id="email-field" value="кuklachev@gmail.com">
+          </li>
+          <li class="form__item group-info__item text-input">
+            <label class="text-input__label" for="phone-field">Телефон:*</label>
+            <input class="text-input__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90">
+          </li>
+        </ul>
       </fieldset>
 
 
@@ -143,7 +141,7 @@
     <section class="footer__contacts contacts">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="contacts__wrapper contacts__wrapper--special">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8 </p>
           <p class="contacts__address-city">Санкт-Петербург</p>

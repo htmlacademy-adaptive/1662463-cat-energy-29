@@ -12,12 +12,7 @@
   }
 }
 
-.products__card-link {
-  @media (min-width: @tablet-width) {
-    min-height: 220px;
-  }
-}
-
+.products__card-link {}
 
 .products__card-img {
   width: 140px;
@@ -26,11 +21,13 @@
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 210px;
+    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
     height: 210px;
+    padding-left: unset;
   }
 }
 
@@ -48,7 +45,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    row-gap: 31px;
+    row-gap: 26px;
   }
 }
 
@@ -62,12 +59,16 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    padding-top: 20px;
     font-size: 20px;
     line-height: 24px;
     width: 140px;
     text-align: center;
     align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: unset;
   }
 }
 
@@ -117,11 +118,12 @@
 
   @media (min-width: @tablet-width) {
     min-width: 250px;
-    margin: 20px auto;
+    margin-top: 34px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
+    margin-top: 42px;
   }
 
 }
@@ -144,6 +146,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 50px 38px 40px;
+    justify-content: unset;
+    gap: 26px;
   }
 }
 
@@ -162,7 +166,13 @@
   @media (min-width: @tablet-width) {
     width: 60px;
     height: 60px;
-    margin-top: 40px;
+    margin-top: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 80px;
   }
 }
 
@@ -173,11 +183,14 @@
 
   @media (min-width: @tablet-width) {
     min-width: 140px;
-    padding: 50px 0 23px;
+    padding: 35px 0 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 0 0;
+
   }
 }
-
-
 
 .products__card-text {
   margin: 0;
@@ -189,13 +202,9 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin: 0 0 82px;
+    padding: 0 0 52px;
     text-align: center;
     width: 172px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
   }
 }
 
@@ -212,6 +221,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
+    margin-top: 65px;
   }
 }
 

@@ -3,11 +3,11 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 70px 30px;
+    padding: 70px 30px 73px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 76px 110px 0;
+    padding: 70px 110px 0;
   }
 }
 
@@ -29,6 +29,14 @@
   }
 }
 
+.second-products__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 79px;
+    margin-top: 80px;
+  }
+}
+
 .second-products__list {
   list-style: none;
   margin: 36px 0 0;
@@ -40,6 +48,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     border: none;
   }
 }
@@ -54,7 +63,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 0 27px;
+    padding: 0;
   }
 }
 
@@ -71,14 +80,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 21px;
     align-items: baseline;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 232px 284px min-content;
-    gap: 112px;
-    ;
+    grid-template-columns: 276px 293px min-content;
+    gap: 42px;
   }
 }
 
@@ -96,7 +104,9 @@
     line-height: 20px;
   }
 
-  @media (min-width: @tablet-width) {}
+  @media (min-width: @desktop-width) {
+    padding: 25px 10px 27px 0;
+  }
 }
 
 .second-products__card-wrapper {
@@ -110,11 +120,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    gap: 112px;
+    justify-content: space-between;
+    gap: unset;
   }
 }
 
 .second-products__card-text {
+  margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -124,7 +136,9 @@
     line-height: 20px;
   }
 
-  @media (min-width: @tablet-width) {}
+  @media (min-width: @desktop-width) {
+    padding-left: 10px;
+  }
 }
 
 .second-products__button {
