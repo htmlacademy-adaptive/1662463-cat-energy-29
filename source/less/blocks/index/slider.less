@@ -78,9 +78,18 @@
 .slider__item--before::before {
   background-image: url("../img/index/example/fat-cat-mobile.png");
 
+  @media (min-resolution: 2ddpx) {
+    background-image: url("../img/index/example/fat-cat-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/index/example/fat-cat-tablet.png");
+
+    @media (min-resolution: 2ddpx) {
+      background-image: url("../img/index/example/fat-cat-tablet@2x.png");
+    }
   }
+
 }
 
 .slider--state-before .slider__item--before {
@@ -98,8 +107,16 @@
 .slider__item--after::before {
   background-image: url("../img/index/example/slim-cat-mobile.png");
 
+  @media (min-resolution: 2ddpx) {
+    background-image: url("../img/index/example/slim-cat-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/index/example/slim-cat-tablet.png");
+
+    @media (min-resolution: 2ddpx) {
+      background-image: url("../img/index/example/slim-cat-tablet@2x.png");
+    }
   }
 }
 

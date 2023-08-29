@@ -23,8 +23,12 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background: url("../img/index/hero/can-tablet.png") no-repeat 1px 1px;;
+      background: url("../img/index/hero/can-tablet.png") no-repeat 1px 1px;
       background-size: cover;
+
+      @media (min-resolution: 2ddpx) {
+        background: url("../img/index/hero/can-tablet@2x.png") no-repeat 1px 1px;
+      }
     }
   }
 
@@ -39,6 +43,10 @@
       bottom: unset;
       background: url("../img/index/hero/can-desktop.png") no-repeat center center;
       transform: translateX(-34%);
+
+      @media (min-resolution: 2ddpx) {
+        background: url("../img/index/hero/can-desktop@2x.png") no-repeat center center;
+      }
     }
 
     &::before {
@@ -76,7 +84,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    // min-height: 609px;
     padding: 0;
   }
 }
@@ -190,7 +197,5 @@
     z-index: 10;
   }
 
-  @media (min-width: @desktop-width) {
-
-  }
+  @media (min-width: @desktop-width) {}
 }
