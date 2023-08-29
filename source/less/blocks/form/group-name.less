@@ -3,7 +3,12 @@
   border-bottom: 1px solid #d7d7d7;
 
   @media (min-width: @tablet-width) {
-    padding: 66px 40px 0;
+    padding: 66px 70px 0;
+    border: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -11,6 +16,10 @@
 
 .group-name__item {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .group-name__item:last-child {

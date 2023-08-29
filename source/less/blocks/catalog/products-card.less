@@ -1,0 +1,241 @@
+.products__card {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 13px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
+    border-top: none;
+  }
+}
+
+.products__card-link {}
+
+.products__card-img {
+  width: 140px;
+  height: 107px;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 210px;
+    padding-top: unset;
+    padding-left: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    height: 210px;
+    padding-left: unset;
+  }
+}
+
+.products__card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    row-gap: 21px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 26px;
+  }
+}
+
+.products__card-title {
+  color: #222222;
+  margin: 0;
+  padding-top: 20px;
+  width: 80px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    width: 140px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+  }
+}
+
+.products__card-table {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 46px 54px;
+    column-gap: 150px;
+    row-gap: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 46px 54px;
+    column-gap: 69px;
+    row-gap: 12px;
+  }
+}
+
+.products__card-description,
+.products__card-value {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}
+
+.products__card-value {
+  text-align: right;
+  margin: 0;
+
+}
+
+.products__card-button {
+  grid-column: 1 / -1;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+    margin-top: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+    margin-top: 42px;
+  }
+
+}
+
+.products__card--show-more {
+  margin: 0;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 37px 40px;
+    justify-content: space-between;
+    border-bottom: 0;
+    ;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 38px 40px;
+    justify-content: unset;
+    gap: 26px;
+  }
+}
+
+.products__card--show-more::before {
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
+}
+
+.products__card-button--show-more {
+  width: 30px;
+  height: 30px;
+  background: @basic-white url("../img/catalog/button-show-more.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 80px;
+  }
+}
+
+.products__card-title--show-more {
+  min-width: 204px;
+  margin: 0;
+  padding: 12px 0 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 140px;
+    padding: 35px 0 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 0 0;
+
+  }
+}
+
+.products__card-text {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 0 52px;
+    text-align: center;
+    width: 172px;
+  }
+}
+
+.products__card-button--show-all {
+  padding: 10px;
+  background: @basic-grey;
+  color: @dark-grey;
+  min-width: 280px;
+  margin-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 169px;
+    margin-top: 13px;
+  }
+}
+
+.products__card-button--show-all:hover {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+.products__card-button--show-all:active {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}

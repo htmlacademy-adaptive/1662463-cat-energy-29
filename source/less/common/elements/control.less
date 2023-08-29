@@ -6,13 +6,17 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  min-height: 27px;
   display: inline-block;
-  padding: 3px 0 0 22px;
-  position: relative;
+
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
-.control__label::before {
+/*.control__label::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -21,6 +25,11 @@
   left: -24px;
   border: 1px solid #cdcdcd;
   background: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__label::after {
@@ -28,16 +37,39 @@
   width: 26px;
   height: 26px;
   position: absolute;
-  background: url("/source/img/form/control-input-tick.svg") no-repeat center;
+  background: url("../img/form/control-input-tick.svg") no-repeat center center;
   top: 3px;
   left: -21px;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .control__input {
   cursor: pointer;
 }
 
-.control__input:checked + .control__label::after {
+.control__input:checked+.control__label::after {
   display: block;
+}
+*/
+
+.control__input[type="checkbox"] {
+  margin: 0;
+  appearance: none;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width:@tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control__input[type="checkbox"]:checked {
+  background: url("../img/form/control-input-tick.svg") no-repeat center center;
 }

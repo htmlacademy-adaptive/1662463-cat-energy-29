@@ -8,12 +8,11 @@
     background: none;
     padding-left: 258px;
     padding-top: 39px;
-    padding-right: 19px;
+    padding-right: 36px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 0 0 0;
-
   }
 }
 
@@ -23,13 +22,37 @@
   left: 20px;
 
   @media (min-width: @tablet-width) {
-    top: 23px;
-    left: 59px;
+    top: 25px;
+    left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
+    top: 57px;
     left: 0;
+  }
+}
+
+.header__logo:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
+.header__logo-image {
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

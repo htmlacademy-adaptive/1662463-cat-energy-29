@@ -5,8 +5,25 @@
 
 .footer__logo {
   margin: 0 auto;
+  padding: 0;
+  display: block;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    width: 128px;
+    text-align: start;
   }
+}
+
+.footer__logo-svg {
+  fill: @basic-black;
+}
+
+.footer__logo-svg:hover {
+  outline: none;
+  fill: #3e3e3e;
+}
+
+.footer__logo-svg:active {
+  fill: #6b6b6b;
 }

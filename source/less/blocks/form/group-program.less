@@ -1,16 +1,37 @@
 .group-program {
-  padding: 22px 20px 22px;
+  padding: 22px 20px 18px;
   border-bottom: 1px solid #d7d7d7;
 
   @media (min-width: @tablet-width) {
     padding: 72px 70px 0;
+    border: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    min-width: 570px;
+  }
+}
+
+.group-program__list {
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
   }
 }
 
 .group-program__item {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -3px;
+  }
 }
 
 .group-program__item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 27px;
+  }
 }
+

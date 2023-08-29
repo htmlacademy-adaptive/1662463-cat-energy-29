@@ -36,5 +36,23 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: normal;
+    padding: 0 12px 0 19px;
+    height: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 239px 0 19px;
+  }
+}
+
+.text-input__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.text-input__input:focus {
+  border: 2px solid @dark-grey;
+}
+
+.text-input__input:invalid {
+  border: 2px solid #ff8282;
 }

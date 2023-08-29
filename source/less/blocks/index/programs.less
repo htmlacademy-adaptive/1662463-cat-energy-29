@@ -2,13 +2,14 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 708px;
+    margin: 0;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1220px;
-    padding-top: 81px;
+    padding: 81px 0 0 0;
   }
 }
 
@@ -20,8 +21,7 @@
   gap: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 9px;
-    margin-right: -9px;
+    margin: 0;
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -57,8 +57,8 @@
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 200px;
-    top: 91px;
-    right: 63px;
+    top: 92px;
+    right: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,8 +84,9 @@
     width: 140px;
     height: 194px;
     background: url("../img/index/programs/cat-slim-tablet.svg") no-repeat center center;
-    top: 79px;
-    left: 67%;
+    top: 82px;
+    left: auto;
+    right: 92px;
   }
 
   @media (min-width: @desktop-width) {
@@ -94,6 +95,7 @@
     background: url("../img/index/programs/cat-slim-desktop.svg") no-repeat center center;
     top: 41px;
     left: 67px;
+    right: auto;
   }
 }
 
@@ -112,8 +114,9 @@
     width: 268px;
     height: 112px;
     background: url("../img/index/programs/cat-pro-tablet.svg") no-repeat center center;
-    top: 135px;
-    left: 58%;
+    top: 136px;
+    left: auto;
+    right: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,6 +125,7 @@
     background: url("../img/index/programs/cat-pro-desktop.svg") no-repeat center center;
     top: 68px;
     left: 32px;
+    right: auto;
   }
 }
 
@@ -137,7 +141,7 @@
   margin: 0 0 29px;
 
   @media (min-width: @tablet-width) {
-    padding: 75px 0 24px;
+    padding: 78px 0 23px;
     margin: 0;
     text-align: left;
     font-size: 36px;
@@ -206,6 +210,7 @@
   margin-bottom: 2px;
   display: block;
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -220,4 +225,34 @@
     width: 167px;
     padding: 1px;
   }
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  background: url("../img/index/programs/icon-arrow.svg");
+  top: 20px;
+  right: 108px;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    top: 14px;
+    right: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 8px;
+    right: 3px;
+  }
+}
+
+.programs__link:hover {
+  outline: none;
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }

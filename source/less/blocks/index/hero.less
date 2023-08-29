@@ -11,7 +11,7 @@
     background-color: @basic-white;
     text-align: start;
     width: 623px;
-    padding: 67px 0 508px 55px;
+    padding: 67px 0 525px 47px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -23,8 +23,12 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background: url("../img/index/hero/can-tablet.png") no-repeat 8px 18px;;
+      background: url("../img/index/hero/can-tablet.png") no-repeat 1px 1px;
       background-size: cover;
+
+      @media (min-resolution: 2ddpx) {
+        background: url("../img/index/hero/can-tablet@2x.png") no-repeat 1px 1px;
+      }
     }
   }
 
@@ -39,6 +43,10 @@
       bottom: unset;
       background: url("../img/index/hero/can-desktop.png") no-repeat center center;
       transform: translateX(-34%);
+
+      @media (min-resolution: 2ddpx) {
+        background: url("../img/index/hero/can-desktop@2x.png") no-repeat center center;
+      }
     }
 
     &::before {
@@ -47,7 +55,7 @@
       height: calc(100% + 115px);
       position: absolute;
       right: 0;
-      top: -115px;
+      top: -116px;
       background: url(../img/index/hero/cat-background-desktop-green.jpg) no-repeat right top;
       background-size: cover;
     }
@@ -76,7 +84,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    // min-height: 609px;
     padding: 0;
   }
 }
@@ -190,7 +197,5 @@
     z-index: 10;
   }
 
-  @media (min-width: @desktop-width) {
-
-  }
+  @media (min-width: @desktop-width) {}
 }
