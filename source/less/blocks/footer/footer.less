@@ -1,6 +1,10 @@
 .footer {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .footer__logo {
@@ -11,19 +15,17 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 128px;
-    text-align: start;
+    padding: 5px 0;
   }
 }
 
-.footer__logo-svg {
-  fill: @basic-black;
-}
+.footer-logo-svg {}
 
 .footer__logo-svg:hover {
   outline: none;
-  fill: #3e3e3e;
+  opacity: 0.8;
 }
 
 .footer__logo-svg:active {
-  fill: #6b6b6b;
+  opacity: 0.6;;
 }

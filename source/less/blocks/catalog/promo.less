@@ -1,22 +1,22 @@
 .promo {
   margin: 35px 20px;
   background: url("../img/catalog/promo/promo-background.jpg") no-repeat 0 0;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 
   @media (min-resolution: 2ddpx) {
     background: url("../img/catalog/promo/promo-background@2x.jpg") no-repeat 0 0;
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 67px 0 0;
+    margin: 67px 30px 73px;
     background: url("../img/catalog/promo/promo-background-tablet.jpg") no-repeat 0 0;
-    background-size: contain;
+    background-size: cover;
 
     @media (min-resolution: 2ddpx) {
       background: url("../img/catalog/promo/promo-background-tablet@2x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background-size: cover;
     }
   }
 
@@ -28,7 +28,7 @@
 
     @media (min-resolution: 2ddpx) {
       background: url("../img/catalog/promo/promo-background-desktop@2x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background-size: cover;
     }
   }
 }
@@ -38,8 +38,8 @@
   position: absolute;
   width: 78px;
   height: 80px;
-  background: url("../img/catalog/promo/icon-gift-mobile.svg") no-repeat center center;
-  top: 57px;
+  background: url("../img/sprite.svg#icon-gift") no-repeat center center;
+  top: 58px;
   left: 100px;
   display: block;
 
@@ -49,15 +49,28 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 58px;
+    top: 55px;
     left: 83px;
+  }
+}
+
+.promo__block {
+  padding: 187px 55px 44px 52px;
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 0px 72px 422px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 0 0 0;
   }
 }
 
 .promo__text {
   color: @basic-white;
   margin: 0;
-  padding: 185px 58px 44px;
+  width: 175px;
+  box-sizing: border-box;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -69,13 +82,12 @@
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    padding: 68px 0px 72px 422px;
+    padding: 0;
     width: 170px;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
-    padding: 187px 0 0;
     margin: 0 auto;
   }
 }
