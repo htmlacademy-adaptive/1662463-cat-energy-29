@@ -28,6 +28,7 @@
 
       @media (min-resolution: 2ddpx) {
         background: url("../img/index/hero/can-tablet@2x.png") no-repeat 1px 1px;
+        background-size: cover;
       }
     }
   }
@@ -46,6 +47,7 @@
 
       @media (min-resolution: 2ddpx) {
         background: url("../img/index/hero/can-desktop@2x.png") no-repeat center center;
+        background-size: cover;
       }
     }
 
@@ -58,6 +60,11 @@
       top: -116px;
       background: url(../img/index/hero/cat-background-desktop-green.jpg) no-repeat right top;
       background-size: cover;
+
+      @media (min-resolution: 2ddpx) {
+        background: url(../img/index/hero/cat-background-desktop-green@2x.jpg) no-repeat right top;
+        background-size: cover;
+      }
     }
   }
 }
@@ -99,6 +106,11 @@
   left: 50px;
   transform: translateX(-50px);
 
+  @media (min-resolution: 2ddpx) {
+    background: url("../img/index/hero/can-mobile@2x.png") no-repeat center center;
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -131,6 +143,11 @@
   top: 0;
   left: 0;
   background-size: auto 100%;
+
+  @media (min-resolution: 2ddpx) {
+    background: url("../img/index/hero/cat-background-mobile-green@2x.jpg") no-repeat center 0;
+    background-size: auto 100%;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

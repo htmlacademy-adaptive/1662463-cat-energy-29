@@ -1,8 +1,7 @@
 .products__card {
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 13px;
+  row-gap: 11px;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
@@ -12,33 +11,50 @@
   }
 }
 
-.products__card-link {}
+.products__card-link {
+  padding-top: 20px;
+  width: 140px;
+  height: 107px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: unset;
+    padding-left: 25px;
+    width: 200px;
+    height: 210px;
+
+    @media (min-width: @desktop-width) {
+      padding-left: unset;
+      width: 169px;
+      height: 210px;
+    }
+  }
+}
 
 .products__card-img {
   width: 140px;
   height: 107px;
-  padding-top: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 210px;
-    padding-top: unset;
-    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
     height: 210px;
-    padding-left: unset;
   }
 }
 
 .products__card-container {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  row-gap: 14px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 22px;
     display: flex;
     row-gap: 21px;
     align-items: center;
@@ -47,6 +63,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 11px;
     row-gap: 26px;
   }
 }
@@ -54,7 +71,7 @@
 .products__card-title {
   color: #222222;
   margin: 0;
-  padding-top: 20px;
+  padding: 0;
   width: 80px;
   box-sizing: border-box;
   font-size: 16px;
@@ -63,16 +80,11 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
     width: 140px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     align-self: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 8px;
   }
 }
 
@@ -80,7 +92,6 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 46px 54px;
@@ -119,10 +130,11 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
+  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     min-width: 250px;
-    margin-top: 34px;
+    margin-top: 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -133,8 +145,6 @@
 }
 
 .products__card--show-more {
-  margin: 0;
-  padding: 25px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -142,23 +152,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 37px 40px;
-    justify-content: space-between;
     border-bottom: 0;
-    ;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 50px 38px 40px;
-    justify-content: unset;
-    gap: 26px;
-  }
-}
-
-.products__card--show-more::before {
-
-  @media (min-width: @tablet-width) {
-    background-color: @basic-white;
   }
 }
 
@@ -166,33 +160,28 @@
   width: 30px;
   height: 30px;
   background: @basic-white url("../img/catalog/button-show-more.svg") no-repeat center;
+  margin-top: 26px;
 
   @media (min-width: @tablet-width) {
     width: 60px;
     height: 60px;
-    margin-top: 71px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 60px;
-    height: 60px;
-    margin-top: 80px;
+    margin-top: 121px;
   }
 }
 
 .products__card-title--show-more {
   min-width: 204px;
   margin: 0;
-  padding: 12px 0 0;
+  padding: 24px 0 0;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     min-width: 140px;
-    padding: 35px 0 5px;
+    padding: 50px 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 13px 0 0;
-
+    padding: 40px 0 0;
   }
 }
 
@@ -202,31 +191,39 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  padding: 8px 0 20px;
+  width: 220px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 0 52px;
     text-align: center;
     width: 172px;
+    padding: 23px 0 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 0 90px;
   }
 }
 
 .products__card-button--show-all {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
   padding: 10px;
   background: @basic-grey;
   color: @dark-grey;
   min-width: 280px;
-  margin-top: 14px;
 
   @media (min-width: @tablet-width) {
     min-width: 250px;
-    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
-    margin-top: 13px;
   }
 }
 

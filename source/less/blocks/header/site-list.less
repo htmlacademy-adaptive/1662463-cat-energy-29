@@ -82,5 +82,7 @@
 }
 
 .site-list__link--current-special {
-  border-bottom: 2px solid @basic-white;
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-white;
+  }
 }
