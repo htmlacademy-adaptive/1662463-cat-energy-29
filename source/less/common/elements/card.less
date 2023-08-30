@@ -1,4 +1,4 @@
-.products__card {
+.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 11px;
@@ -11,7 +11,7 @@
   }
 }
 
-.products__card-link {
+.card__link {
   padding-top: 20px;
   width: 140px;
   height: 107px;
@@ -31,7 +31,7 @@
   }
 }
 
-.products__card-img {
+.card__img {
   width: 140px;
   height: 107px;
   box-sizing: border-box;
@@ -47,7 +47,7 @@
   }
 }
 
-.products__card-container {
+.card__container {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
@@ -68,7 +68,7 @@
   }
 }
 
-.products__card-title {
+.card__title {
   color: #222222;
   margin: 0;
   padding: 0;
@@ -88,7 +88,7 @@
   }
 }
 
-.products__card-table {
+.card__table {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,14 +100,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 46px 54px;
     column-gap: 69px;
     row-gap: 12px;
   }
 }
 
-.products__card-description,
-.products__card-value {
+.card__description,
+.card__value {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -119,13 +118,13 @@
 
 }
 
-.products__card-value {
+.card__value {
   text-align: right;
   margin: 0;
 
 }
 
-.products__card-button {
+.card__button {
   grid-column: 1 / -1;
   font-size: 16px;
   line-height: 20px;
@@ -141,10 +140,9 @@
     min-width: 169px;
     margin-top: 42px;
   }
-
 }
 
-.products__card--show-more {
+.card--show-more {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -156,7 +154,7 @@
   }
 }
 
-.products__card-button--show-more {
+.card__button--show-more {
   width: 30px;
   height: 30px;
   background: @basic-white url("../img/catalog/button-show-more.svg") no-repeat center;
@@ -169,7 +167,7 @@
   }
 }
 
-.products__card-title--show-more {
+.card__title--show-more {
   min-width: 204px;
   margin: 0;
   padding: 24px 0 0;
@@ -185,7 +183,7 @@
   }
 }
 
-.products__card-text {
+.card__text {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 12px;
@@ -208,7 +206,7 @@
   }
 }
 
-.products__card-button--show-all {
+.card__button--show-all {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -227,12 +225,12 @@
   }
 }
 
-.products__card-button--show-all:hover {
+.card__button--show-all:hover {
   background-color: #e6e6e6;
   outline: none;
 }
 
-.products__card-button--show-all:active {
+.card__button--show-all:active {
   background-color: #e6e6e6;
   opacity: 0.3;
 }

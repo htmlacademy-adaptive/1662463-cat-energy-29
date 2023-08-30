@@ -156,26 +156,18 @@
 }
 
 .hero__heading {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
   position: relative;
   z-index: 2;
   margin: 2px auto 0;
   width: 321px;
+  border-top: unset;
+  color: @basic-white;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     width: 420px;
     margin: 0;
+    color: @basic-black;
   }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-
 }
 
 .hero__slogan {
