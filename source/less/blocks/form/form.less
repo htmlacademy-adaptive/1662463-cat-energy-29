@@ -6,8 +6,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 80px;
-    padding: 66px 110px 0;
+    padding: 66px 0 0;
     box-sizing: border-box;
+    width: 1220px;
+    margin: 0 auto;
 
   }
 }
@@ -28,10 +30,18 @@
   padding: 0 20px;
 
   @media (min-width:@tablet-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 0 0;
+    gap: 78px;
   }
 }
 
@@ -52,7 +62,7 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
-    margin: 55px 68px 11px 90px;
+    margin: 0;
   }
 }
 
@@ -73,6 +83,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 42px;
+    padding-top: 5px;
   }
 }

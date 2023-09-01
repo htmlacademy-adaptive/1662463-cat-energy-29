@@ -39,9 +39,11 @@
     </div>
   </header>
   <main class="main-form form-page">
-    <h1 class="form-page__heading inner-title">Подбор программы</h1>
-    <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <h2 class="visually-hidden">Анкета персональных данных</h2>
+    <div class="form-page__block">
+      <h1 class="form-page__heading inner-title">Подбор программы</h1>
+      <p class="form-page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h2 class="visually-hidden">Анкета персональных данных</h2>
+    </div>
 
     <form class="form form-page__form" action="" method="post">
       <div class="form__container">
@@ -84,24 +86,29 @@
 
       <fieldset class="form__group group-info">
         <legend class="special-title group-info__title">
-          <span class="special-title__text group-info__text">Контактные данные (владельца кота)</span>
+          <div class="special-title__container">
+            <span class="special-title__text">Контактные данные (владельца кота)</span>
+          </div>
         </legend>
         <ul class="form__list group-info__list">
           <li class="form__item group-info__item text-input">
             <label class="text-input__label" for="email-field">E-mail:*</label>
-            <input class="text-input__input" type="email" name="email" id="email-field" value="кuklachev@gmail.com">
+            <input class="text-input__input" type="email" name="email" id="email-field" value="kuklachev@gmail.com"
+              placeholder="Ваш e-mail" required>
           </li>
           <li class="form__item group-info__item text-input">
             <label class="text-input__label" for="phone-field">Телефон:*</label>
-            <input class="text-input__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90">
+            <input class="text-input__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90"
+            placeholder="Ваш телефон" required>
           </li>
         </ul>
       </fieldset>
 
-
       <fieldset class="form__group group-comments">
         <legend class="special-title group-comments__title">
-          <span class="special-title__text group-comments__text">Комментарий</span>
+          <div class="special-title__container">
+            <span class="special-title__text">Комментарий</span>
+          </div>
         </legend>
         <label class="text-input__label group-comments__label" for="message"></label>
         <textarea class="text-input__input textarea" name="comment" id="message" maxlength="250"
@@ -110,7 +117,9 @@
 
       <fieldset class="form__group group-others">
         <legend class="special-title group-others__title">
-          <span class="special-title__text group-others__text">Дополнительно</span>
+          <div class="special-title__container">
+            <span class="special-title__text">Дополнительно</span>
+          </div>
         </legend>
         <ul class="form__list group-others__list">
           <li class="form__item group-others__item control">
