@@ -1,6 +1,6 @@
 .benefits {
-  margin: 20px auto 0;
-  padding: 0 20px;
+  margin: 0;
+  padding: 20px 20px 0;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -53,8 +53,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 74px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 75px;
+    gap: 80px;
 
   }
 }
@@ -70,7 +71,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 79px 0 72px 0;
+    padding: 79px 0 70px 0;
   }
 
 }
@@ -144,20 +145,17 @@
 }
 
 .benefits__item--nutrients::before {
-  background-image: url("../img/sprite.svg#icon-nutrients");
+  background-image: url("../img/index/benefits/icon-nutrients.svg");
 }
 
 .benefits__item--cooking::before {
-  background-image: url("../img/sprite.svg#icon-cooking");
-}
+  background-image: url("../img/index/benefits/icon-cooking.svg");}
 
 .benefits__item--eating::before {
-  background-image: url("../img/sprite.svg#icon-eating");
-}
+  background-image: url("../img/index/benefits/icon-eating.svg");}
 
 .benefits__item--results::before {
-  background-image: url("../img/sprite.svg#icon-results");
-}
+  background-image: url("../img/index/benefits/icon-results.svg");}
 
 .benefits__text {
   font-family: "Lato", sans-serif;
@@ -170,7 +168,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 33px;
+    padding-top: 35px;
+    width: 245px;
   }
 }
 

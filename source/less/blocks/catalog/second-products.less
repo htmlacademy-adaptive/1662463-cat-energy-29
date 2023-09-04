@@ -14,7 +14,7 @@
 .second-products__heading {
   color: @basic-black;
   margin: 0;
-  padding: 0 20px 0;
+  padding: 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -23,7 +23,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 70px 0;
+    padding: 0 30px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,6 +34,7 @@
 .second-products__container {
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     margin: 80px auto 0;
     width: 1220px;
@@ -46,9 +47,9 @@
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 80px 0 0;
-    padding: 0 30px;
-
+    margin: 80px 30px 0;
+    padding: 0;
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,7 +67,7 @@
   @media (min-width: @tablet-width) {
     padding: 26px 33px 28px 38px;
     border-top: unset;
-    border: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,6 +79,10 @@
 
 .second-products__item:last-child {
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .second-products__card {
@@ -159,9 +164,9 @@
     padding-left: 13px;
   }
 }
+
 .second-products__card-price {
-  @media (min-width: @tablet-width) {
-  }
+  @media (min-width: @tablet-width) {}
 }
 
 .second-products__card-button {
