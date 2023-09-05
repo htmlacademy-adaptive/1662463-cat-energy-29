@@ -49,7 +49,7 @@
 }
 
 .card__container {
-  padding-top: 20px;
+  padding-top: 21px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -93,7 +93,15 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 13px;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+
   }
 }
 
@@ -126,12 +134,12 @@
   @media (min-width: @tablet-width) {
     grid-column: unset;
     min-width: 250px;
-    margin-top: 23px;
+    margin-top: 26px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 
