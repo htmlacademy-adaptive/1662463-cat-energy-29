@@ -16,14 +16,19 @@
   @media (min-width: @tablet-width) {
     padding: 0 30px;
     margin-bottom: 75px;
-    width: 768px;
+    width: 100%;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     margin-bottom: 8px;
-    width: 100%;
+  }
+}
+
+.group-info__text {
+  @media (max-width: @mobile-width-only) {
+    max-width: 186px;
   }
 }
 
