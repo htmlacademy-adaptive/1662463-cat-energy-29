@@ -7,13 +7,25 @@
   line-height: 18px;
   text-transform: uppercase;
   display: inline-block;
-
-
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: normal;
   }
+}
+
+.control__label:hover {
+  opacity: 0.8;
+}
+
+.control__label:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.control__label:disabled {
+  opacity: 0.3;
 }
 
 /*.control__label::before {
@@ -63,6 +75,7 @@
   border: 1px solid #cdcdcd;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 
   @media (min-width:@tablet-width) {
     width: 40px;
@@ -72,4 +85,19 @@
 
 .control__input[type="checkbox"]:checked {
   background: url("../img/form/control-input-tick.svg") no-repeat center center;
+}
+
+.control__input[type="checkbox"]:hover {
+  opacity: 0.8;
+  border: 1px solid #bababa;
+}
+
+.control__input[type="checkbox"]:focus {
+  opacity: 0.6;
+  border: 2px solid @dark-grey;
+  outline: none;
+}
+
+.control__input[type="checkbox"]:disabled {
+  opacity: 0.3;
 }

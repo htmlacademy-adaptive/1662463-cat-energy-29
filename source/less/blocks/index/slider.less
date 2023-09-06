@@ -125,7 +125,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #666666;
+  border: #666666;
   background: url("../img/sprite.svg#thumb") no-repeat center;
   position: absolute;
   transition: all 2s;
@@ -141,4 +141,30 @@
 
 .slider--state-after .slider__button {
   left: 0;
+}
+
+.slider__item--before:hover{
+  border-right: 4px solid @basic-green;
+}
+
+.slider__item--before:focus {
+  outline: none;
+  border-right: 4px solid @basic-green;
+}
+
+.slider__item--before:active {
+  border-right: 4px solid #5EAA2F;
+}
+
+.slider__button:hover {
+  border: @basic-green;
+}
+
+.slider__button:focus {
+  outline: none;
+  border: @basic-green;
+}
+
+.slider__button:active {
+background-color: @basic-green;
 }

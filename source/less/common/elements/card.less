@@ -32,6 +32,19 @@
   }
 }
 
+.card__link:hover {
+  opacity: 0.8;
+}
+
+.card__link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.card__link:active {
+  opacity: 0.3;
+}
+
 .card__img {
   width: 140px;
   height: 107px;
@@ -168,6 +181,19 @@
   }
 }
 
+.card__button--show-more:hover {
+  opacity: 0.8;
+}
+
+.card__button--show-more:focus {
+  outline: none;
+  border: 2px solid #f2f2f2;
+}
+
+.card__button--show-more:active {
+  opacity: 0.3;
+}
+
 .card__title--show-more {
   min-width: 204px;
   margin: 0;
@@ -228,10 +254,14 @@
 
 .card__button--show-all:hover {
   background-color: #e6e6e6;
+}
+
+.card__button--show-all:focus {
+  background-color: #e6e6e6;
   outline: none;
 }
 
 .card__button--show-all:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
+  color: #4444444d;
 }

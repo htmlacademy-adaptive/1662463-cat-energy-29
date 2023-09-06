@@ -65,10 +65,15 @@
   display: block;
 }
 
-.radio__input:checked+.radio__label:hover {
-  outline: none;
+.radio__input+.radio__label:hover {
+  opacity: 0.8;
 }
 
-.radio__input:checked+.radio__label:disabled {
+.radio__input+.radio__label:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.radio__input+.radio__label:disabled {
   opacity: 0.3;
 }
