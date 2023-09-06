@@ -1,5 +1,11 @@
 .nav {
-  position: relative;
+  position: absolute;
+  background: #ffffff;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .nav--opened .nav__toggle {
@@ -41,4 +47,3 @@
     display: none;
   }
 }
-
