@@ -47,9 +47,36 @@
 
 .group-info__item {
   margin-bottom: 14px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 19px;
   }
 }
 
+
+.group-info__item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  right: 13px;
+
+  @media (min-width: @tablet-width) {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.group-info__item::after:hover {}
+
+
+.group-info__item--email::after {
+  background: url("../img/sprite.svg#email") no-repeat 0 0;
+}
+
+.group-info__item--phone::after {
+  content: "";
+  background: url("../img/sprite.svg#phone") no-repeat 0 0;
+}
