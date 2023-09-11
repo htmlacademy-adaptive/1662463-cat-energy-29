@@ -94,8 +94,13 @@
 
 .control__input[type="checkbox"]:focus {
   opacity: 0.6;
-  border: 2px solid @dark-grey;
-  outline: none;
+  outline: 2px solid @dark-grey;
+  border: transparent;
+}
+
+.control__input[type="checkbox"]:active {
+  border:  2px solid @dark-grey;
+  outline: transparent;
 }
 
 .control__input[type="checkbox"]:disabled {

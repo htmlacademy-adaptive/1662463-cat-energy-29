@@ -74,7 +74,7 @@
   display: block;
   width: 36px;
   height: 50px;
-  background: url("../img/sprite.svg#cat-slim-mobile") no-repeat center center;
+  background: url("../img/index/programs/cat-slim-mobile.svg") no-repeat center center;
   position: absolute;
   z-index: 2;
   top: 21px;
@@ -83,7 +83,7 @@
   @media (min-width: @tablet-width) {
     width: 140px;
     height: 194px;
-    background: url("../img/sprite.svg#cat-slim-tablet") no-repeat center center;
+    background: url("../img/index/programs/cat-slim-tablet.svg") no-repeat center center;
     top: 82px;
     left: auto;
     right: 93px;
@@ -92,7 +92,7 @@
   @media (min-width: @desktop-width) {
     width: 70px;
     height: 97px;
-    background: url("../img/sprite.svg#cat-slim-desktop") no-repeat center center;
+    background: url("../img/index/programs/cat-slim-desktop.svg") no-repeat center center;
     top: 44px;
     left: 67px;
     right: auto;
@@ -104,7 +104,7 @@
   display: block;
   width: 67px;
   height: 28px;
-  background: url("../img/sprite.svg#cat-pro-mobile") no-repeat center center;
+  background: url("../img/index/programs/cat-pro-mobile.svg") no-repeat center center;
   position: absolute;
   z-index: 2;
   top: 36px;
@@ -113,7 +113,7 @@
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 112px;
-    background: url("../img/sprite.svg#cat-pro-tablet") no-repeat center center;
+    background: url("../img/index/programs/cat-pro-tablet.svg") no-repeat center center;
     top: 136px;
     left: auto;
     right: 29px;
@@ -122,14 +122,12 @@
   @media (min-width: @desktop-width) {
     width: 134px;
     height: 56px;
-    background: url("../img/sprite.svg#cat-pro-desktop") no-repeat center center;
+    background: url("../img/index/programs/cat-pro-desktop.svg") no-repeat center center;
     top: 70px;
     left: 32px;
     right: auto;
   }
 }
-
-.programs__wrapper {}
 
 .programs__heading {
   color: @basic-black;
@@ -143,6 +141,8 @@
   width: 180px;
   padding-left: 40px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     padding: 78px 0 23px;

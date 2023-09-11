@@ -24,11 +24,11 @@
     margin: 0;
     background: url("../img/catalog/promo/promo-background-desktop.jpg") no-repeat 0 0;
     width: 245px;
-    height: 288px;
+    background-size: cover;
 
     @media (min-resolution: 2ddpx) {
       background: url("../img/catalog/promo/promo-background-desktop@2x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background-size: cover;
     }
   }
 }
@@ -38,12 +38,13 @@
   position: absolute;
   width: 78px;
   height: 80px;
-  background: url("../img/sprite.svg#icon-gift") no-repeat center center;
+  background: url("../img/catalog/promo/icon-gift-mobile.svg") no-repeat center center;
   top: 58px;
   left: 100px;
   display: block;
 
   @media (min-width: @tablet-width) {
+    background: url("../img/catalog/promo/icon-gift-tablet.svg") no-repeat center center;
     top: 58px;
     left: 79px;
   }

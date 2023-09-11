@@ -67,6 +67,7 @@
   height: 20px;
   top: 12px;
   right: 13px;
+  background-color: @basic-black;
 
   @media (min-width: @tablet-width) {
     top: 16px;
@@ -74,14 +75,15 @@
   }
 }
 
-.group-info__item::after:hover {}
+.group-info__item::after:hover {
+  background-color: red;
+}
 
 
 .group-info__item--email::after {
-  background: url("../img/sprite.svg#email") no-repeat 0 0;
+  mask-image: url("../img/stack.svg#email");
 }
 
 .group-info__item--phone::after {
-  content: "";
-  background: url("../img/sprite.svg#phone") no-repeat 0 0;
+  mask-image: url("../img/stack.svg#phone");
 }

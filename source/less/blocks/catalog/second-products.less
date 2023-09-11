@@ -65,7 +65,7 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 33px 28px 38px;
+    padding: 25px 40px 29px 37px;
     border-top: unset;
     border-bottom: 1px solid #cdcdcd;
   }
@@ -137,7 +137,6 @@
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
-    gap: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -160,17 +159,26 @@
 }
 
 .second-products__card-text {
+  @media (min-width: @tablet-width) {
+    width: 135px;
+    text-align: right;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-left: 13px;
+    padding-left: 9px;
+    text-align: left;
   }
 }
 
 .second-products__card-price {
-  @media (min-width: @tablet-width) {}
+  @media (min-width: @tablet-width) {
+    width: 95px;
+    text-align: right;
+  }
 }
 
 .second-products__card-button {
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
