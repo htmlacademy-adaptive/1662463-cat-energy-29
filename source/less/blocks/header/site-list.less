@@ -57,20 +57,27 @@
 }
 
 .site-list__link:hover {
-  outline: none;
   opacity: 0.6;
+}
+
+.site-list__link:focus {
+  outline: none;
+  opacity: 0.3;
 }
 
 .site-list__link:active {
   color: @basic-black;
+}
 
+.site-list__link--special {
   @media (min-width: @desktop-width) {
     color: @basic-white;
   }
 }
 
-.site-list__link--special {
+.site-list__link--special:active {
   @media (min-width: @desktop-width) {
+    opacity: unset;
     color: @basic-white;
   }
 }

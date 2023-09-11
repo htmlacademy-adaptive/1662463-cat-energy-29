@@ -35,13 +35,21 @@
   background-color: #ffffff;
   position: relative;
   z-index: 5;
-  max-width: 186px;
+  max-width: 226px;
 
   @media (min-width: @tablet-width) {
     padding: 0 40px;
     max-width: 520px;
   }
   @media (min-width: @desktop-width) {
-    margin-left: 70px;
+    margin-left: -40px;
+  }
+}
+
+.special-title__container {
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+    display: block;
   }
 }

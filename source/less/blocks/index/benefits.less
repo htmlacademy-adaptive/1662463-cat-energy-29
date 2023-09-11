@@ -1,10 +1,10 @@
 .benefits {
-  margin: 20px auto 0;
-  padding: 0 20px;
+  margin: 0;
+  padding: 22px 20px 0;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 45px 30px 33px;
+    padding: 45px 30px 31px;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -32,14 +32,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 69px;
+    margin-top: 70px;
   }
 }
 
 .benefits__list {
   list-style: none;
   margin: 0;
-  padding-top: 42px;
+  padding-top: 39px;
   padding-left: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -53,8 +53,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 72px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 75px;
+    gap: 80px;
 
   }
 }
@@ -66,11 +67,11 @@
 
 
   @media (min-width: @tablet-width) {
-    padding: 79px 55px 74px 0;
+    padding: 81px 57px 72px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 79px 0 72px 0;
+    padding: 79px 0 70px 0;
   }
 
 }
@@ -131,7 +132,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background: @basic-green no-repeat center;
+  background: @basic-green no-repeat center center;
   top: 0;
   left: 0;
 
@@ -144,32 +145,39 @@
 }
 
 .benefits__item--nutrients::before {
-  background-image: url("../img/sprite.svg#icon-nutrients");
+  background-image: url("../img/index/benefits/icon-nutrients.svg");
 }
 
 .benefits__item--cooking::before {
-  background-image: url("../img/sprite.svg#icon-cooking");
-}
+  background-image: url("../img/index/benefits/icon-cooking.svg");}
 
 .benefits__item--eating::before {
-  background-image: url("../img/sprite.svg#icon-eating");
-}
+  background-image: url("../img/index/benefits/icon-eating.svg");}
 
 .benefits__item--results::before {
-  background-image: url("../img/sprite.svg#icon-results");
-}
+  background-image: url("../img/index/benefits/icon-results.svg");}
 
 .benefits__text {
   font-family: "Lato", sans-serif;
   margin: 0;
+  padding-top: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 30px;
+    padding-top: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    width: 245px;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  padding-top: 33px;
-}
+.benefits__text br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: unset;
+  }
 }

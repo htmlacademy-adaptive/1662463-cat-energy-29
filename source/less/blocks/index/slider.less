@@ -5,13 +5,16 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin-top: 90px;
+    margin: 90px auto;
     width: 560px;
     height: 512px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 26px;
+    margin: 26px auto;
+    position: absolute;
+    bottom: 61px;
+    right: 110px;
   }
 }
 
@@ -70,8 +73,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: linear-gradient(to bottom, #ffffff, #ffffff 134px, #eaeaea 134px, #eaeaea 100%);
-
+    background: linear-gradient(to bottom, #fff, #fff 135px, #f2f2f2 135px, #f2f2f2 100%);
   }
 }
 
@@ -125,8 +127,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #666666;
-  background: url("../img/sprite.svg#thumb") no-repeat center;
+  border: #666666;
+  mask-image: url("../img/stack.svg#thumb");
   position: absolute;
   transition: all 2s;
   top: 50%;
@@ -142,3 +144,27 @@
 .slider--state-after .slider__button {
   left: 0;
 }
+
+.slider__item--before:hover {
+  border-right: 4px solid @basic-green;
+}
+
+.slider__item--before:focus {
+  outline: none;
+  border-right: 4px solid @basic-green;
+}
+
+.slider__item--before:active {
+  border-right: 4px solid #5EAA2F;
+}
+
+.slider__button:hover {
+
+}
+
+.slider__button:focus {
+  outline: none;
+  border: @basic-green;
+}
+
+.slider__button:active {}

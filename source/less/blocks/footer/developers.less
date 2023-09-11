@@ -5,8 +5,7 @@
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    gap: 20px;
-
+    gap: 24px;
   }
 }
 
@@ -20,7 +19,12 @@
 }
 
 .developers__link-name:hover {
+  opacity: 0.6;
+}
+
+.developers__link-name:focus {
   outline: none;
+  opacity: 0.6;
 }
 
 .developers__link-name:active {
@@ -28,13 +32,17 @@
 }
 
 .developers__link-logo {
-  mask-image: url("../img/sprite.svg#developers-logo");
+  mask-image: url("../img/stack.svg#developers-logo");
   background-color: #666666;
   width: 27px;
   height: 34px;
 }
 
 .developers__link-logo:hover {
+  background-color: @basic-green;
+}
+
+.developers__link-logo:focus {
   outline: none;
   background-color: @basic-green;
 }

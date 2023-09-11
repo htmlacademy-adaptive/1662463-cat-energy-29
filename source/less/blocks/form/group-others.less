@@ -1,31 +1,28 @@
 .group-others {
-  margin-top: 22px;
-  margin-bottom: 33px;
+  margin: 23px 0 33px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 63px;
-    margin-bottom: 39px;
+    margin: 66px 0 59px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 69px;
-    margin-bottom: 69px;
+    margin: 70px 0 79px;
   }
 }
 
 .group-others__title {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 56px;
     padding: 0 30px;
-    width: 768px;
+    width: 100%;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    width: 100%;
+    margin-bottom: 59px;
   }
 }
 
@@ -41,7 +38,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;

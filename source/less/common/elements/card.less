@@ -32,6 +32,19 @@
   }
 }
 
+.card__link:hover {
+  opacity: 0.8;
+}
+
+.card__link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.card__link:active {
+  opacity: 0.3;
+}
+
 .card__img {
   width: 140px;
   height: 107px;
@@ -49,7 +62,7 @@
 }
 
 .card__container {
-  padding-top: 20px;
+  padding-top: 21px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -93,7 +106,15 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 13px;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+
   }
 }
 
@@ -126,12 +147,12 @@
   @media (min-width: @tablet-width) {
     grid-column: unset;
     min-width: 250px;
-    margin-top: 23px;
+    margin-top: 26px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 169px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 
@@ -158,6 +179,19 @@
     height: 60px;
     margin-top: 121px;
   }
+}
+
+.card__button--show-more:hover {
+  opacity: 0.8;
+}
+
+.card__button--show-more:focus {
+  outline: none;
+  border: 2px solid #f2f2f2;
+}
+
+.card__button--show-more:active {
+  opacity: 0.3;
 }
 
 .card__title--show-more {
@@ -220,10 +254,14 @@
 
 .card__button--show-all:hover {
   background-color: #e6e6e6;
+}
+
+.card__button--show-all:focus {
+  background-color: #e6e6e6;
   outline: none;
 }
 
 .card__button--show-all:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
+  color: #4444444d;
 }
