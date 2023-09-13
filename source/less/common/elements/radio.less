@@ -8,36 +8,17 @@
   text-transform: uppercase;
   min-height: 22px;
   display: inline-block;
-  padding: 8px 0 0 45px;
+  padding: 6px 0 0 15px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: normal;
-    padding: 27px 0 0 86px;
+    padding: 27px 0 0 43px;
   }
 
   @media (min-width:@desktop-width) {
-    padding: 27px 0px 0px 88px;
-  }
-}
-
-.radio__label::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  left: -1px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-
-
-  @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
-    top: 23px;
-    left: 26px;
+    padding: 28px 0 0 44px;
   }
 }
 
@@ -48,15 +29,44 @@
   position: absolute;
   border-radius: 50%;
   background-color: @basic-green;
-  top: 9px;
-  left: 8px;
+  top: 8px;
+  left: -21px;
   display: none;
 
   @media (min-width: @tablet-width) {
     width: 18px;
     height: 18px;
+    top: 34px;
+    left: -6px;
+  }
+
+  @media (min-width: @tablet-width) {
     top: 35px;
-    left: 38px;
+    left: -5px;
+  }
+}
+
+.radio__input {
+  position: relative;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    left: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    left: 27px;
   }
 }
 
@@ -68,15 +78,24 @@
   display: block;
 }
 
-.radio__input+.radio__label:hover {
+.radio__label:hover {
   opacity: 0.8;
 }
 
-.radio__input+.radio__label:focus {
-  outline: none;
-  opacity: 0.6;
+.radio__label:disabled {
+  opacity: 0.3;
 }
 
-.radio__input+.radio__label:disabled {
+.radio__input:hover {
+  border: 1px solid #bababa
+}
+
+.radio__input:focus {
+  border: 2px solid @dark-grey;
+  opacity: 0.8;
+  outline: none;
+}
+
+.radio__input:disabled {
   opacity: 0.3;
 }

@@ -74,17 +74,17 @@
         <fieldset class="form__group group-program">
           <ul class="form__list group-program__list">
             <li class="form__item group-program__item radio">
-              <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="program-type"
+              <input class="radio__input" type="radio" id="weight-loss" name="program-type"
                 value="weight-loss" checked>
               <label class="radio__label" for="weight-loss">Похудение</label>
             </li>
             <li class="form__item group-program__item radio">
-              <input class="radio__input visually-hidden" type="radio" id="weight-gain" name="program-type"
+              <input class="radio__input" type="radio" id="weight-gain" name="program-type"
                 value="weight-gain">
               <label class="radio__label" for="weight-gain">Набор массы</label>
             </li>
             <li class="form__item group-program__item radio">
-              <input class="radio__input visually-hidden" type="radio" id="advice" name="program-type" value="advice">
+              <input class="radio__input" type="radio" id="advice" name="program-type" value="advice">
               <label class="radio__label" for="advice"> Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -102,11 +102,19 @@
             <label class="text-input__label" for="email-field">E-mail:*</label>
             <input class="text-input__input" type="email" name="email" id="email-field" value="kuklachev@gmail.com"
               placeholder="Ваш e-mail" required>
+            <svg class="text-input__svg text-input__svg--email" width="19" height="14" viewBox="0 0 19 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#email"></use>
+            </svg>
           </li>
           <li class="form__item group-info__item group-info__item--phone text-input">
             <label class="text-input__label" for="phone-field">Телефон:*</label>
             <input class="text-input__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90"
               placeholder="Ваш телефон" required>
+            <svg class="text-input__svg text-input__svg--phone" width="21" height="20" viewBox="0 0 21 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#phone"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
