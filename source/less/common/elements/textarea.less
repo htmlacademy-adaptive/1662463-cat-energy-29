@@ -1,23 +1,21 @@
 .textarea {
-  margin: 0 20px;
+  margin: 0;
   padding-top: 16px;
   resize: none;
-  width: 280px;
+  width: 100%;
   height: 150px;
+  min-height: 150px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0 70px;
     padding-top: 12px;
     resize: none;
-    width: 627px;
     height: 175px;
-    box-sizing: border-box;
     display: block;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
     padding-top: 10px;
-    width: 1220px;
+    padding-right: 19px;
   }
 }
