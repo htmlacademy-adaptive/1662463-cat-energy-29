@@ -13,8 +13,9 @@
   @media (min-width: @desktop-width) {
     margin: 25px auto;
     position: absolute;
-    bottom: 61px;
+    top: 0;
     right: 110px;
+    height: 100%;
   }
 }
 
@@ -162,6 +163,10 @@
     mask-image: url("../img/stack.svg#thumb");
     background-color: #666666;
     mask-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 41%;
   }
 }
 
