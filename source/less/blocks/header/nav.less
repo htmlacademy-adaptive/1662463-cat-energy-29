@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.nav--closed .site-list__item {
+.nav--closed .nav__list-item {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
@@ -63,8 +63,14 @@
   }
 }
 
-.nav--nojs .site-list__item {
+.nav--nojs .nav__list-item {
   @media (max-width: @mobile-width-only) {
     display: block;
+  }
+}
+
+.nav--nojs .nav__list-item:last-child {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: none;
   }
 }
