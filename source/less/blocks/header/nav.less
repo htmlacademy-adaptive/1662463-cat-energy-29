@@ -49,3 +49,22 @@
     display: none;
   }
 }
+
+.nav--nojs {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+  }
+}
+
+.nav--nojs .nav__toggle {
+  @media (max-width: @mobile-width-only) {
+    background: unset;
+    display: none;
+  }
+}
+
+.nav--nojs .site-list__item {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
