@@ -38,9 +38,9 @@
   @media (min-width: @desktop-width) {
     padding: 68px 0 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    column-gap: 80px;
-    flex-wrap: nowrap;
+    justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
   }
@@ -52,5 +52,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
   }
 }
