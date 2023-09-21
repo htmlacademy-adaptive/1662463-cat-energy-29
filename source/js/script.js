@@ -5,6 +5,7 @@ const sliderButton = document.querySelector('.slider__button');
 const slider = document.querySelector('.slider');
 
 nav.classList.add('nav--closed');
+nav.classList.remove('nav--nojs');
 
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('nav--closed');
